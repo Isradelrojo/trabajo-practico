@@ -1,0 +1,21 @@
+@media only screen and (max-width: 760px){
+    .body__move {
+        margin-left: 0;
+    }
+
+    .menu__side_move {
+        width: 80px;
+        left: -80px;
+    }
+
+    .icon_menu {
+        transform: translateX(10px);
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+    body {
+        background-position: right 10%;
+    }
+}
