@@ -19,6 +19,7 @@ body {
     background-position: center;
     height: 100vh;
     width: 100vw;
+    
 }
 
 header {
@@ -30,7 +31,7 @@ header {
     /* background-color: #f5f5f5; */
     position: fixed;
     top: 0;
-    /*z-index: 100;*/
+    z-index: 100;
 }
 
 .icon__menu {
@@ -166,6 +167,7 @@ a .selected {
     background-color: black;
     padding: .5rem;
     width: 50%;
+    border-radius: 10px;
 }
 
 .main p {
@@ -174,6 +176,7 @@ a .selected {
     color: #ffffb2;
     width: 50%;
     margin-top: 2rem;
+    border-radius: 10px;
 }
 
 
@@ -204,4 +207,49 @@ a .selected {
 
 .adress {
     align-items: center;
+}
+
+/* Estilos para el main de productos */
+.main__productos {
+    margin-top: 60px;
+    align-items: center;
+    margin: 70px auto 0 auto;
+    
+    
+}
+
+.cards__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+
+.cards__container h3 {
+    color: #ffffb2;
+    margin-top: 10px;
+}
+
+.cards__container p {
+    color: #ffffb2;
+    display: block;
+}
+
+.cards__container a {
+    display: inline-block;
+    color: #ffffb2;
+}
+
+.card {
+    width: 200px;
+    height: 320px;
+    margin: 0 5px;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
 }
