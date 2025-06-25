@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+a {
+    color: antiquewhite;
+}
+
+.container {
+    background-image: url("../media/fondo.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 85px 1fr auto;
+    grid-template-areas: "aside header header header header header header header header header header header"
+                         "aside main main main main main main main main main main main"
+                         "footer footer footer footer footer footer footer footer footer footer footer footer";
+    width: 100%;
+    transition: grid-template-columns 0.8s ease-in-out;
+}
+
+/* Estilos para el header */
+
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+header .hamburguesa {
+    background-color: inherit;
+    height: 25px;
+    width: 25px;
+    margin: auto 20px;
+    border-radius: 50%;
+    
+}
+
+header .hamburguesa i {
+    width: 100%;
+    font-size: 20px;
+    color: bisque;
+}
+
+
+/* Estilos para el aside */
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.brand {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 85px;
+    font-size: 22px;
+}
+
+.brand .brand_icon a {
+    color: antiquewhite;
+}
+
+.brand_title {
+    display: none;
+}
+
+.menu_item {
+    display: none;
+}
+
+
+
+.menu {
+    display: grid;
+    grid-template-rows: repeat(10, 25px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.menu .menu_container .menu_icon a {
+    color: antiquewhite;
+}
+
+
+/* Cambios en el aside cuando se presiona el boton de hamburguesa */
+
+.menu__desplegado {
+    grid-template-areas: 
+        "aside aside aside aside header header header header header header header header"
+        "aside aside aside aside main main main main main main main main"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+        
+    
+    }
+
+
+.aside__open {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 85px 1fr;
+    
+}
+
+.aside__open .brand {
+    grid-column: 1 / 5;
+    
+}
+
+.aside__open .menu {
+    grid-column: 1 / 5;
+    display: grid;
+    justify-content: start;
+    margin-top: 1em;
+    gap: 20px;
+    font-size: 22px;
+}
+
+
+
+.brand_open {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    height: 85px;
+    font-size: 22px;
+}
+
+.brand_open .brand_icon {
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+
+.brand_open .brand_title {
+    grid-column: 2 / 5;
+    display: inline-block;
+}
+
+.menu_open {
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: start;
+    
+}
+
+.menu_open .menu_container {
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.menu_open .menu_container .menu_icon {
+    justify-self: center;
+    grid-column: 1 / 2;
+}
+
+.menu_open .menu_container .menu_item {
+    display: inline-block;
+    grid-column: 2 / 5;
+}
+
+
+/* Estilos para el main */
+
+.main {
+    grid-area: main;
+}
+
+/* Estilos para el footer */
+
+.footer {
+    grid-area: footer;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+
+
+    @media (width <= 490px) {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+}
+
+.footer .legales {
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.footer .redes {
+    display: flex;
+    align-items: center;
+
+    @media ( width <= 490px) {
+        justify-content: space-around;
+    }
+}
+
+.footer_container .redes ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0 10px;
+
+    @media ( width <= 490px ) {
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+.footer_container .direccion {
+    margin: 0 10px;
+    color: antiquewhite;
+}
+
+.footer_container .redes ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+}
