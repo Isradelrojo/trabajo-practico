@@ -12,4 +12,6 @@ boton.addEventListener("click", ()=>{
     asideOpen.classList.toggle("aside__open");
     brand.classList.toggle("brand_open");
     menuOpen.classList.toggle("menu_open");
+
+    asideOpen.classList.toggle("visible");
 });
