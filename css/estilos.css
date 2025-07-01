@@ -205,6 +205,7 @@ header .hamburguesa i {
 
 .main {
     grid-area: main;
+    overflow: auto;
 }
 
 .main h2 {
@@ -280,4 +281,84 @@ header .hamburguesa i {
 .footer_container .redes ul li a {
     text-decoration: none;
     color: antiquewhite;
+}
+
+
+/* Estilos para la pagina de contacto */
+
+.form_container {
+    display: flex;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1a1a1a; /* Gris oscuro */
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.form_container_personal {
+    margin: 0 30px;
+}
+
+.form_container_vehiculo {
+    margin: 0 30px;
+}
+
+.form_container h3 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px #ffcc00;
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.enviar_boton {
+    margin-top: 20px;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.enviar_boton:hover {
+    background-color: #e6b800;
+    transform: scale(1.02);
 }
