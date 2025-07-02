@@ -101,30 +101,32 @@
                 <div class="form_container_personal">
                     <h3>Informacion de contacto:</h3>
 
-                    <form action="form_personal" class="form_personal" id="form_personal">
+                    <form class="form_personal" id="form_personal">
                         <label for="nombre">Nombre/s: </label>
-                        <input type="text" placeholder="Ingrese su nombre">
+                        <input name="nombre" type="text" placeholder="Ingrese su nombre" id="contacto_nombre">
                         <label for="apellido">Apellido:</label>
-                        <input type="text" placeholder="Ingrese su apellido">
+                        <input name="apellido" type="text" placeholder="Ingrese su apellido" id="contacto_apellido">
                         <label for="email">Ingrese email: </label>
-                        <input type="email" name="email" id="email">
+                        <input name="email" type="email" name="email" id="contacto_email">
                         <label for="telefono">Ingrese teléfono: </label>
-                        <input type="tel" name="telefono" id="telefono">
+                        <input type="tel" name="telefono" id="contacto_telefono">
                     </form>
                 </div>
                 <div class="form_container_vehiculo">
                     <h3>Datos del vehiculo:</h3>
-                    <form action="form_vehiculo" class="form_vehiculo" id="form_vehiculo">
+                    <form class="form_vehiculo" id="form_vehiculo">
                         <label for="marca">Ingrese marca:</label>
-                        <input type="text" placeholder="Ingrese marca.">
+                        <input name="marca" type="text" placeholder="Ingrese marca." id="contacto_marca">
                         <label for="modelo">Ingrese modelo:</label>
-                        <input type="text" placeholder="Ingrese modelo.">
-                        <label for="año">Ingrese el año:</label>
-                        <input type="number" name="ano" id="ano" min="1955" max="2025">
+                        <input name="modelo" type="text" placeholder="Ingrese modelo." id="contacto_modelo">
+                        <label for="ano">Ingrese el año:</label>
+                        <input type="number" name="ano" id="ano" min="1955" max="2025" id="contacto_ano">
                         <label for="problema">Descripcion del problema:</label>
-                        <textarea name="problema" id="problema" placeholder="Describa el problema"></textarea>
-                        <input type="button" value="enviar" class="enviar_boton" id="enviar_boton">
+                        <textarea name="problema" id="problema" placeholder="Describa el problema" itemid="contacto_problema"></textarea>
+                        <input type="button" value="enviar" class="enviar_boton" id="contacto_enviar_boton">
                     </form>
+
+                    
 
                 </div>
             </div>
