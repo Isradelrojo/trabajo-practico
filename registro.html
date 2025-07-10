@@ -97,8 +97,29 @@
             </div>
         </aside>
         <main class="main">
-            <h2>P'agina de registro</h2>
-        </main>
+    <div class="form_container" id="form_container">
+        <form class="form_personal" id="form_registro">
+            <h3>Registro de usuario</h3>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="registro_nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="registro_apellido" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="registro_email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="text" id="registro_password" required>
+
+            <input type="submit" value="Registrarse" class="enviar_boton">
+        </form>
+    </div>
+    <div id="mensaje_registro" style="display: none; text-align: center; margin-top: 20px; color: #ffcc00; font-size: 18px;">
+        ¡Te has registrado correctamente!
+    </div>
+</main>
 
         <footer class="footer">
             <div class="footer_container">
