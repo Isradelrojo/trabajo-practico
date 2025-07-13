@@ -173,7 +173,7 @@ if (formRegistro) {
 
 /* Carga de productos mediante javascript desde un json */
 
-fetch('../js/productos/productos.json')
+fetch('../../js/productos/productos.json')
   .then(res => res.json())
   .then(productos => {
     const contenedor = document.querySelector('.productos_container');
