@@ -1,0 +1,202 @@
+[
+  {
+    "titulo": "Neumático 175/70 R13",
+    "descripcion": "Neumático radial ideal para autos compactos.",
+    "precio": 47000,
+    "categoria": "neumaticos",
+    "rating": 4,
+    "imagen": "media/producto_1.jpg"
+  },
+  {
+    "titulo": "Neumático 195/65 R15",
+    "descripcion": "Alta duración y agarre para autos medianos.",
+    "precio": 65000,
+    "categoria": "neumaticos",
+    "rating": 5,
+    "imagen": "media/producto_2.jpg"
+  },
+  {
+    "titulo": "Neumático 205/55 R16",
+    "descripcion": "Para autos deportivos, gran rendimiento.",
+    "precio": 79000,
+    "categoria": "neumaticos",
+    "rating": 4,
+    "imagen": "media/producto_3.jpg"
+  },
+  {
+    "titulo": "Neumático 215/60 R17",
+    "descripcion": "Gran tracción para SUV y camionetas.",
+    "precio": 91000,
+    "categoria": "neumaticos",
+    "rating": 4,
+    "imagen": "media/producto_4.jpg"
+  },
+  {
+    "titulo": "Neumático 185/65 R14",
+    "descripcion": "Neumático balanceado para uso",
+    "precio": 52000,
+    "categoria": "neumaticos",
+    "rating": 3,
+    "imagen": "media/producto_5.jpg"
+  },
+  {
+    "titulo": "Neumático 225/45 R17",
+    "descripcion": "Alta performance para vehículos deportivos.",
+    "precio": 84000,
+    "categoria": "neumaticos",
+    "rating": 5,
+    "imagen": "media/producto_6.jpg"
+  },
+  {
+    "titulo": "Neumático 165/70 R13",
+    "descripcion": "Económico y seguro para ciudad.",
+    "precio": 43000,
+    "categoria": "neumaticos",
+    "rating": 4,
+    "imagen": "media/producto_7.jpg"
+  },
+  {
+    "titulo": "Neumático 235/70 R16",
+    "descripcion": "Diseñado para pick-ups y caminos difíciles.",
+    "precio": 98000,
+    "categoria": "neumaticos",
+    "rating": 4,
+    "imagen": "media/producto_8.jpg"
+  },
+  {
+    "titulo": "Neumático 195/50 R15",
+    "descripcion": "Deportivo y duradero para rutas exigentes.",
+    "precio": 60000,
+    "categoria": "neumaticos",
+    "rating": 4,
+    "imagen": "media/producto_9.jpg"
+  },
+  {
+    "titulo": "Neumático 215/55 R16",
+    "descripcion": "Confort y seguridad en cada viaje.",
+    "precio": 75000,
+    "categoria": "neumaticos",
+    "rating": 5,
+    "imagen": "media/producto_10.jpg"
+  },
+  {
+    "titulo": "Cricket hidráulico 2T",
+    "descripcion": "Soporta hasta 2 toneladas, ideal para taller.",
+    "precio": 18000,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_11.jpg"
+  },
+  {
+    "titulo": "Llave cruz reforzada",
+    "descripcion": "Llave de acero templado, 4 bocas.",
+    "precio": 9500,
+    "categoria": "accesorios",
+    "rating": 5,
+    "imagen": "media/producto_12.jpg"
+  },
+  {
+    "titulo": "Cámara para auto",
+    "descripcion": "Repuesto interno para neumáticos sin cámara.",
+    "precio": 8000,
+    "categoria": "accesorios",
+    "rating": 3,
+    "imagen": "media/producto_13.jpg"
+  },
+  {
+    "titulo": "Kit de parches",
+    "descripcion": "Para reparación de pinchaduras en ruta.",
+    "precio": 3500,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_14.jpg"
+  },
+  {
+    "titulo": "Válvulas TR-414",
+    "descripcion": "Pack x10 válvulas resistentes para goma.",
+    "precio": 2500,
+    "categoria": "accesorios",
+    "rating": 5,
+    "imagen": "media/producto_15.jpg"
+  },
+  {
+    "titulo": "Manómetro digital",
+    "descripcion": "Mide presión de neumáticos con precisión.",
+    "precio": 6500,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_16.jpg"
+  },
+  {
+    "titulo": "Compresor portátil",
+    "descripcion": "Infla neumáticos en minutos, con enchufe 12V.",
+    "precio": 12000,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_17.jpg"
+  },
+  {
+    "titulo": "Llave de impacto manual",
+    "descripcion": "Ideal para aflojar tuercas oxidadas.",
+    "precio": 14000,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_18.jpg"
+  },
+  {
+    "titulo": "Gato tijera 1.5T",
+    "descripcion": "Compacto, ideal para baúl de emergencia.",
+    "precio": 9000,
+    "categoria": "accesorios",
+    "rating": 3,
+    "imagen": "media/producto_19.jpg"
+  },
+  {
+    "titulo": "Extractor de válvulas",
+    "descripcion": "Herramienta precisa para remover válvulas.",
+    "precio": 2000,
+    "categoria": "accesorios",
+    "rating": 5,
+    "imagen": "media/producto_20.jpg"
+  },
+  {
+    "titulo": "Medidor de profundidad",
+    "descripcion": "Controla el desgaste del neumático.",
+    "precio": 1800,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_21.jpg"
+  },
+  {
+    "titulo": "Guantes de taller",
+    "descripcion": "Antideslizantes y reforzados para mecánicos.",
+    "precio": 2200,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_22.jpg"
+  },
+  {
+    "titulo": "Soporte de seguridad",
+    "descripcion": "Par de soportes para trabajar bajo el auto.",
+    "precio": 16000,
+    "categoria": "accesorios",
+    "rating": 5,
+    "imagen": "media/producto_23.jpg"
+  },
+  {
+    "titulo": "Linterna LED recargable",
+    "descripcion": "Iluminación para trabajos nocturnos.",
+    "precio": 4500,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_24.jpg"
+  },
+  {
+    "titulo": "Set de destornilladores",
+    "descripcion": "Multifunción con mango ergonómico.",
+    "precio": 5000,
+    "categoria": "accesorios",
+    "rating": 4,
+    "imagen": "media/producto_25.jpg"
+  }
+]

@@ -1,3 +1,5 @@
+
+
 // /* Con este primer codigo manejamos el desplazamiento del menu lateral */
 
 // const boton = document.getElementById("hamburguesa");
@@ -169,3 +171,28 @@ if (formRegistro) {
 }
 
 
+/* Carga de productos mediante javascript desde un json */
+
+fetch('../js/productos/productos.json')
+  .then(res => res.json())
+  .then(productos => {
+    const contenedor = document.querySelector('.productos_container');
+    productos.forEach(producto => {
+      const estrellas = '★'.repeat(producto.rating) + '☆'.repeat(5 - producto.rating);
+      const card = document.createElement('div');
+      card.classList.add('producto_card');
+      card.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.titulo}">
+        <h3>${producto.titulo}</h3>
+        <p>${producto.descripcion}</p>
+        <span class="precio">$${producto.precio.toLocaleString()}</span>
+        <p class="rating">${estrellas}</p>
+        <button class="comprar_btn">Comprar</button>
+      `;
+      contenedor.appendChild(card);
+      console.log(producto.imagen);
+    });
+  })
+  .catch(error => console.error('Error al cargar productos:', error));
+
+  
