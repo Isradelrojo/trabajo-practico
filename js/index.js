@@ -55,19 +55,19 @@
 
 
 // document.getElementById("contacto_enviar_boton").addEventListener("click", function () {
-    
+
 //     // Capturamos los campos del formulario personal
 //     const nombre = document.getElementById("contacto_nombre").value.trim();
 //     const apellido = document.getElementById("contacto_apellido").value.trim();
 //     const email = document.getElementById("contacto_email").value.trim();
 //     const telefono = document.getElementById("contacto_telefono").value.trim();
-    
+
 //     // Capturamos los campos del formulario vehiculo
 //     const marca = document.getElementById("contacto_marca").value.trim();
 //     const modelo = document.getElementById("contacto_modelo").value.trim();
 //     const ano = document.getElementById("ano").value.trim();
 //     const problema = document.getElementById("problema").value.trim();
-    
+
 //     console.log(nombre.value);
 //     // Verificamos si alguno está vacío
 //     if (!nombre || !apellido || !email || !telefono || !marca || !modelo || !ano || !problema) {
@@ -163,7 +163,7 @@ const mensajeRegistro = document.getElementById("mensaje_registro");
 if (formRegistro) {
     formRegistro.addEventListener("submit", function (e) {
         e.preventDefault();
-
+        
         // Se podría agregar validación aquí si se desea
         mensajeRegistro.style.display = "block";
         formRegistro.reset();
@@ -174,14 +174,14 @@ if (formRegistro) {
 /* Carga de productos mediante javascript desde un json */
 
 fetch('https://raw.githubusercontent.com/Isradelrojo/trabajo-practico/refs/heads/main/js/productos/productos.json')
-  .then(res => res.json())
-  .then(productos => {
-    const contenedor = document.querySelector('.productos_container');
-    productos.forEach(producto => {
-      const estrellas = '★'.repeat(producto.rating) + '☆'.repeat(5 - producto.rating);
-      const card = document.createElement('div');
-      card.classList.add('producto_card');
-      card.innerHTML = `
+    .then(res => res.json())
+    .then(productos => {
+        const contenedor = document.querySelector('.productos_container');
+        productos.forEach(producto => {
+            const estrellas = '★'.repeat(producto.rating) + '☆'.repeat(5 - producto.rating);
+            const card = document.createElement('div');
+            card.classList.add('producto_card');
+            card.innerHTML = `
         <img src="${producto.imagen}" alt="${producto.titulo}">
         <h3>${producto.titulo}</h3>
         <p>${producto.descripcion}</p>
@@ -189,10 +189,9 @@ fetch('https://raw.githubusercontent.com/Isradelrojo/trabajo-practico/refs/heads
         <p class="rating">${estrellas}</p>
         <button class="comprar_btn">Comprar</button>
       `;
-      contenedor.appendChild(card);
-      console.log(producto.imagen);
-    });
-  })
-  .catch(error => console.error('Error al cargar productos:', error));
+            contenedor.appendChild(card);
+            console.log(producto.imagen);
+        });
+    })
+    .catch(error => console.error('Error al cargar productos:', error));
 
-  
